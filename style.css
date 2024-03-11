@@ -1,8 +1,20 @@
 /**************************************/
 /* General Stylings*/
 
-*, *::before, *::after {
-  box-sizing: border-box;        /* Muss das? Warum muss das? */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Muss das? Warum muss das? */
+}
+
+body {
+  --background-color: #f4f4ff;
+  --text-color: #191970;
+  --accent-color1: white;
+  --accent-color2: #474799;
+  --color: #191970;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 html {
@@ -10,8 +22,8 @@ html {
   margin: 0 auto;
   max-width: 70ch;
   padding: 20px;
-  background-color: #f4f4ff;
-  color: #191970;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 h1 {
@@ -32,7 +44,7 @@ img {
 /* Specific Stylings*/
 
 .header {
-  border-left: 10px solid #191970;
+  border-left: 10px solid var(--color);
   text-align: end;
 }
 
@@ -40,24 +52,92 @@ img {
   max-width: 65ch; /* changed from 80% to 65ch as p needs tobe 65 characters wide */
 }
 
-
 .card {
   box-shadow: 0 50px 100px 50px rgba(0, 0, 0, 0.3);
   /*transition: 1ms; ******************* was macht das?*/
   width: 600px;
   padding-bottom: 5px;
   border-radius: 10px 10px 0 0;
+  transition: 1s ease-in-out;
+  background-color: var(--accent-color1);
+}
+
+.card:hover {
+  box-shadow: 0 50px 100px 50px rgba(25, 25, 112, 0.5);
 }
 .card-text {
   padding-left: 2rem;
   margin: 0 auto;
 }
+.emoji {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2.5rem;
+  filter: grayscale(100%);
+}
 
-/*img {
+.emoji:hover {
+  filter: grayscale(0%);
+  transition-duration: 0.5s;
+  animation: wiggle 2.5s infinite;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(15deg);
+  }
+  80% {
+    transform: rotate(-15deg);
+  }
+  85% {
+    transform: rotate(15deg);
+  }
+  95% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+.img-card {
   border-radius: 5px 5px 0 0;
-  aspect-ratio: 16/9;
+
   width: 100%;
   overflow: hidden;
   margin: 0;
   position: relative;
-}*/
+  transition: 0.5s ease-in-out;
+}
+
+.img-card .img-wrapper > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+  transition: 200ms transform ease-in-out;
+}
+
+.card:hover > .img-card .img-wrapper > img {
+  transform: scale(1.025);
+}
+
+.link {
+  color: var(--text-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --background-color: #191970;
+    --text-color: #f4f4ff;
+    --color: #f4f4ff;
+    --accent-color1: var(--accent-color2);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card:hover {
+    box-shadow: 0 50px 100px 50px rgba(62, 100, 214, 0.5);
+  }
+}
