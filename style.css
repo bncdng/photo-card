@@ -44,12 +44,10 @@ img {
 }
 
 .header-text {
-  max-width: 65ch; /* changed from 80% to 65ch as p needs tobe 65 characters wide */
-}
+  max-width: 65ch;
 
 .card {
   box-shadow: 0 50px 100px 50px rgba(0, 0, 0, 0.3);
-  /*transition: 1ms; ******************* was macht das?*/
   width: 600px;
   padding-bottom: 5px;
   border-radius: 10px 10px 0 0;
@@ -135,4 +133,5 @@ img {
   .card:hover {
     box-shadow: 0 50px 100px 50px rgba(62, 100, 214, 0.5);
   }
+}
 }
