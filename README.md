@@ -1,65 +1,29 @@
-# photo-card
+# Photo Card
 
-# Live Session 08.03.2024
+<img width="1646" alt="Bildschirmfoto 2024-03-12 um 10 12 19" src="https://github.com/bncdng/photo-card/assets/156106753/c965b3c9-bf15-48bd-a5e2-b892a92db007">
 
-## Themen der Live Session
+<img width="1638" alt="Bildschirmfoto 2024-03-12 um 10 12 09" src="https://github.com/bncdng/photo-card/assets/156106753/3fbe2fe8-e064-440a-ab02-4279412f3499">
 
-- Aufgabe: Photo Card
 
-### Aufgabe: Photo Card
+## Welcome to the Photo Card project! This project is designed to create visually appealing photo cards with various features including shadow boxing, grid layout, flexbox arrangement, picture zooming, and a favorite feature. Below you'll find a guide on how to use and customize this code.
 
-Baut das Website Layout nach, so wie ihr es auf dem Screenshot seht:
+### Features:
+Shadow Box: Adds a subtle shadow effect around the photo card, enhancing its visual appeal and making it stand out.
 
-![Photo Card Website in zwei Ansichten](./task/photo_card_website.png)
+Grid Layout: Utilizes a grid layout to organize multiple photo cards in a structured and responsive manner.
 
-Hier seht ihr, wie sich die Website in verschiedenen Fenster-Größen und beim Hover verhält:
+Flexbox Arrangement: Utilizes flexbox to arrange the elements within each photo card, providing flexibility in design and layout.
 
-[Photo Card Website Video](./task/photo_card_website.mp4)
+Picture Zooming: Allows users to zoom in and out of the displayed picture for closer inspection, enhancing the user experience.
 
-Bitte startet mit diesem HTML Code:
+Favorite Feature: Enables users to mark their favorite photo cards, providing a personalized touch to the application.
 
-```
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Photo Card</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-normalize@latest/modern-normalize.css"
-    />
-  </head>
-  <body>
-    <header>
-      <h1>Photo<br />Card</h1>
-      <p>
-        On this website you can find a card with a random image from
-        <a href="https://www.unsplash.com">unsplash</a>. Try to focus on
-        creating the main structure of the HTML and CSS first. Then add the
-        details bit by bit. If you make good progress, try to add an animated
-        hover effect for the little icon in the image. Oh, and this paragraph
-        must only be 65 characters wide.
-      </p>
-    </header>
-    <main>
-    </main>
-  </body>
-</html>
-```
+Offers the option to switch between light and dark modes for accessibility and user experience.
 
-Verwendet für das Bild diese URL:
+### File Structure:
+index.html: Contains the main HTML structure of the application.
+styles.css: Defines the styling for the photo cards using CSS, including the shadow box, grid layout, and flexbox arrangement.
 
-```
-https://source.unsplash.com/600x600/?nature
-```
-
-## Up Next
-
-### Bis zum Ende des Tages (08.03.2024):
-
-- An der Aufgabe arbeiten, soweit ihr kommt.
-- Bitte pusht den aktuellen Stand am Ende des Tages und postet den Link in Discord.
+### Credits:
+This project was created by Bianca and Ruth.
+Inspiration and guidance were taken from various resources online.
