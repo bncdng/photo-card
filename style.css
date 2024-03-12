@@ -1,37 +1,33 @@
 /**************************************/
 /* General Stylings*/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box; /* Muss das? Warum muss das? */
-}
-
-html {
-  display: block;
-  margin: 0 auto 20rem auto;
-  max-width: 70ch;
-  padding: 20px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-body {
+:root {
   --background-color: #f4f4ff;
   --accent-color1: white;
   --accent-color2: #474799;
   --color: #191970;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--color);
+}
+main,
+header {
+  max-width: 70ch;
+  padding: 20px;
+  margin: 0 auto;
+  color: var(--color);
 }
 
 h1 {
   text-transform: uppercase;
   font-size: 5rem;
-}
-
-img {
-  border-radius: 10px 10px 0 0;
 }
 
 /**************************************/
@@ -59,6 +55,7 @@ img {
 .card:hover {
   box-shadow: 0 55px 80px 15px rgba(25, 25, 112, 0.5);
 }
+
 .card-text {
   padding-left: 2rem;
   margin: 0 auto;
@@ -127,6 +124,35 @@ img {
   color: var(--color);
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 3.5rem 2.5rem;
+  margin-top: 15rem;
+  background-color: var(--color);
+  color: var(--accent-color1);
+}
+
+.border {
+  border-left: 0.25rem solid;
+  padding-left: 2rem;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-section .border > h2,
+i {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 @media screen and (prefers-color-scheme: dark) {
   body {
     --background-color: #191970;
@@ -137,5 +163,35 @@ img {
 
   .card:hover {
     box-shadow: 0 55px 80px 15px rgba(62, 100, 214, 0.5);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: block;
+    gap: 2rem;
+    padding: 3.5rem 2.5rem;
+    margin-top: 15rem;
+    background-color: var(--color);
+    color: var(--accent-color1);
+  }
+
+  .border {
+    border-left: 0.25rem solid;
+    padding-left: 2rem;
+  }
+
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-section .border > h2,
+  i {
+    margin: 0;
+    font-size: 1.5rem;
   }
 }
