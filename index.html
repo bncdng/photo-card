@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photo Card</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-normalize@latest/modern-normalize.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="header">
-        <h1>Photo<br />Card</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Card</title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-normalize@latest/modern-normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1>Photo<br />Card</h1>
+    </div>
+    <div class="header-text">
+      <p class="sixtyfive-char">
+        On this website you can find a card with a random image from
+        <a class="link" href="https://www.unsplash.com">unsplash</a>. Try to
+        focus on creating the main structure of the HTML and CSS first. Then
+        add the details bit by bit. If you make good progress, try to add an
+        animated hover effect for the little icon in the image. Oh, and this
+        paragraph must only be 65 characters wide.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="img-card">
+        <div class="img-wrapper">
+          <img src="https://source.unsplash.com/600x600/?nature" />
+          <a class="emoji">❤️</a>
+        </div>
       </div>
-      <div class="header-text">
-        <p class="sixtyfive-char">
-          On this website you can find a card with a random image from
-          <a class="link" href="https://www.unsplash.com">unsplash</a>. Try to
-          focus on creating the main structure of the HTML and CSS first. Then
-          add the details bit by bit. If you make good progress, try to add an
-          animated hover effect for the little icon in the image. Oh, and this
-          paragraph must only be 65 characters wide.
+      <div class="card-text">
+        <h2>Nature</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+          distinctio exercitationem adipisci sapiente magni facilis laboriosam
+          dignissimos reiciendis in repudiandae fugit fuga animi, porro
+          quisquam! Rerum veritatis maiores non beatae?
         </p>
       </div>
-    </header>
+    </div>
+  </main>
+</body>
 
-    <main>
-      <div class="card">
-        <div class="img-card">
-          <div class="img-wrapper">
-            <img src="https://source.unsplash.com/600x600/?nature" />
-            <a class="emoji">❤️</a>
-          </div>
-        </div>
-        <div class="card-text">
-          <h2>Nature</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-            distinctio exercitationem adipisci sapiente magni facilis laboriosam
-            dignissimos reiciendis in repudiandae fugit fuga animi, porro
-            quisquam! Rerum veritatis maiores non beatae?
-          </p>
-        </div>
-      </div>
-    </main>
-  </body>
 </html>
