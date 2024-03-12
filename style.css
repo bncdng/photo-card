@@ -191,30 +191,12 @@ i {
 
 @media screen and (max-width: 700px) {
   .footer {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 3.5rem 2.5rem;
     margin-top: 15rem;
     background-color: var(--color);
     color: var(--accent-color1);
-  }
-
-  .border {
-    border-left: 0.25rem solid;
-    padding-left: 2rem;
-  }
-
-  .footer-section {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-
-  .footer-section .border > h2,
-  i {
-    margin: 0;
-    font-size: 1.5rem;
   }
 }
