@@ -40,10 +40,9 @@ h1 {
 
 .card {
   box-shadow: 0 50px 100px 50px rgba(0, 0, 0, 0.3);
-  width: 600px;
   padding-bottom: 5px;
   border-radius: 10px 10px 0 0;
-  transition: 1s ease-in-out;
+  transition: 1s;
   background-color: var(--accent-color1);
   max-width: 100%;
 }
@@ -54,6 +53,9 @@ h1 {
 
 .card-text {
   padding: 2rem;
+  text-overflow: unset;
+  white-space: normal;
+  overflow: hidden;
   margin: 0 auto;
 }
 .emoji {
