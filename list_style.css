@@ -1,16 +1,3 @@
-:root {
-  --background-color: #f4f4ff;
-  --accent-color1: white;
-  --accent-color2: #474799;
-  --color: #191970;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 h2 {
   text-align: start;
   padding: 0;
@@ -20,35 +7,34 @@ h2 {
 img {
   aspect-ratio: 1/1;
   width: 50px;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+  transition: 0.25s transform ease-in-out;
+  border-radius: 10px 0 0 10px;
 }
 
 .card {
   display: flex;
   align-items: center;
+  margin: 10px;
   box-shadow: 0 50px 100px 50px rgba(0, 0, 0, 0.3);
   border-radius: 20px 0 0 20px;
   transition: 1s ease-in-out;
   background-color: var(--accent-color1);
-  max-width: 80%;
 }
 
 .card:hover {
   box-shadow: 0 55px 80px 15px rgba(25, 25, 112, 0.5);
 }
 
+.img-card {
+  overflow: visible;
+}
+
 .img-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.img-card .img-wrapper > img {
-  width: 40%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  overflow: hidden;
-  object-position: center;
-  transition: 0.25s transform ease-in-out;
-  border-radius: 10px 0 0 10px;
 }
 
 .card-text {
@@ -59,9 +45,10 @@ img {
 }
 
 .emoji {
-  transform: scale(2);
-  margin: auto 10px;
+  margin: auto;
+  padding: 10px;
   opacity: 0.8;
+  position: static;
   filter: grayscale(100%);
   transition-duration: 0.5s;
 }
@@ -69,7 +56,7 @@ img {
 .emoji:hover {
   opacity: 1;
   filter: grayscale(0%);
-  animation: wiggle 2s infinite;
+  animation: none;
 }
 
 .lorem {
@@ -79,70 +66,3 @@ img {
   overflow: hidden;
   margin: 0 auto;
 }
-
-/*
-mmain {
-    max-width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: 0 50px 100px 50px rgba(0, 0, 0, 0.3);    padding-bottom: 5px;
-    border-radius: 10px 10px 0 0;
-    transition: 1s ease-in-out;
-    background-color: var(--accent-color1);
-    max-width: 100%;
-  }
-  
-  .card:hover {
-    box-shadow: 0 55px 80px 15px rgba(25, 25, 112, 0.5);
-  }
-  
-  .card-text {
-    margin: 0 auto;
-    max-height: fit-content;
-  }
-  .emoji {
-    position: absolute;
-    justify-content: flex-end;
-    top: 1rem;
-    font-size: 2.5rem;
-    opacity: 0.8;
-    filter: grayscale(100%);
-    transition-duration: 0.5s;
-  }
-  
-  .emoji:hover {
-    opacity: 1;
-    filter: grayscale(0%);
-    animation: wiggle 2s infinite;
-  }
-  
-  
-  .img-card {
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-    position: relative;
-    display: flex;
-  }
-  .card-text {
-    display: flex;
-  }
-
-  .img-card .img-wrapper > img {
-    width: 20%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    overflow: hidden;
-    object-position: center;
-  }
-  
-  .link {
-    color: var(--color);
-  }
-  */

@@ -160,6 +160,11 @@ i {
   .card:hover {
     box-shadow: 0 55px 80px 15px rgba(62, 100, 214, 0.5);
   }
+
+  .footer {
+    background-color: var(--accent-color2);
+    color: var(--color);
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -169,7 +174,5 @@ i {
     gap: 2rem;
     padding: 3.5rem 2.5rem;
     margin-top: 15rem;
-    background-color: var(--color);
-    color: var(--accent-color1);
   }
 }
